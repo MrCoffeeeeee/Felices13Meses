@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2a0f24">
+<title>Para ti 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<canvas id="fx"></canvas>
+
+<button id="music" class="music" hidden aria-label="Música">♪</button>
+
+<!-- 1. Sobre -->
+<section id="intro" class="screen">
+  <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Abrir sobre">
+    <div class="flap"></div>
+    <div class="seal">♥</div>
+  </div>
+  <p class="hint">Toca el sobre para abrirlo</p>
+</section>
+
+<!-- 2. Contenido -->
+<main id="letter" class="hidden">
+  <header class="hero doom" id="doom">
+    <p class="legend" id="legend"></p>
+    <div class="clock" id="clock">
+      <div class="digits" id="digits">0</div>
+      <div class="unit" id="unit">meses</div>
+      <div class="secs" id="secs">&nbsp;</div>
+    </div>
+    <div class="scroll" id="scrollHint">↓</div>
+  </header>
+
+  <section id="capitulos"></section>
+
+  <section class="block">
+    <h3 id="razonesTitulo"></h3>
+    <p class="small">Toca cada tarjeta</p>
+    <div class="cards" id="razones"></div>
+  </section>
+
+  <section class="block poemsec">
+    <p class="small">una última cosa</p>
+    <button class="open-poem" id="openPoem"></button>
+    <div class="parchment" id="parchment" aria-hidden="true">
+      <div class="roll"></div>
+      <div class="sheet"><div class="sheet-in">
+        <h3 id="poemaTitulo"></h3>
+        <div class="poemlines" id="poema"></div>
+        <p class="psign" id="sign"></p>
+      </div></div>
+      <div class="roll"></div>
+    </div>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
